@@ -4,7 +4,7 @@
     Springboot Application
     Install Maven
 # Clone code using below command
-    git clone https://github.com/Naresh240/springboot-webapplication.git
+    git clone https://github.com/Alekhya-kandala/springboot-webapplication.git
     cd springboot-webapplication
 # Build Artifact
     mvn clean install
@@ -12,8 +12,8 @@
   Tomcat Setup:
     
     cd /opt
-    wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.46/bin/apache-tomcat-9.0.46.tar.gz
-    cd apache-tomcat-9.0.46 tomcat
+    sudo wget https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz
+    sudo tar -xvzf apache-tomcat-9*.tar.gz
   
   Start tomcat:
     
@@ -21,7 +21,7 @@
     ./startup.sh
   
   Copy springboot artifact to Webapps Directory:
-    
+    cd /home/ubuntu
     cd springboot-webapplication
     cp target/mavewebappdemo-2.0.0-SNAPSHOT.war /opt/tomcat/webapps/mavewebappdemo.war
 
